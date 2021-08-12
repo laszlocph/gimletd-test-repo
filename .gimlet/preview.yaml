@@ -6,8 +6,6 @@ chart:
   repository: https://chart.onechart.dev
   name: onechart
   version: 0.24.0
-deploy:
-  event: pr
 values:
   replicas: 1
   image:
