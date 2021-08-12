@@ -1,0 +1,16 @@
+app: myapp-{{ .GITHUB_BRANCH | sanitizeDNSName }}
+env: staging
+namespace: gimlet-demo-staging
+chart:
+  repository: https://chart.onechart.dev
+  name: onechart
+  version: 0.24.0
+deploy:
+  event: pr
+values:
+  replicas: 1
+  image:
+    repository: ghcr.io/podtato-head/podtatoserver
+    tag: "v0.1.1"
+  gitRepository: laszlocph/gimletd-test-repo
+  gitSha: "{{ .GITHUB_SHA }}"
