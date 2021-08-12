@@ -1,4 +1,5 @@
 app: myapp-{{ .GITHUB_BRANCH | sanitizeDNSName }}
+appAlias: myapp-preview
 env: staging
 namespace: gimlet-demo-staging
 chart:
