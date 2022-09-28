@@ -19,9 +19,9 @@ values:
     annotations:
       cert-manager.io/cluster-issuer: letsencrypt
       kubernetes.io/ingress.class: nginx
-    host: test-app.staging.turbopizza.net
+    host: test-app-do-not-merge-me.staging.turbopizza.net
     tlsEnabled: true
-  replicas: 4
+  replicas: 5
   resources:
     limits:
       cpu: 50m
