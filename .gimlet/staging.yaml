@@ -27,10 +27,10 @@ values:
       cpu: 50m
       memory: 50Mi
     requests:
-      cpu: 50m
+      cpu: 40m
       memory: 10Mi
   vars:
-    MY_NEW_DUMMY_VAR: my-new-dummy-value
+    MY_NEW_DUMMY_VAR: my-new-dummy-value-fixed
 strategicMergePatches: ""
 json6902Patches: []
 manifests: ""
