@@ -1,0 +1,15 @@
+app: test-app2
+env: agent-test
+namespace: default
+tenant:
+  name: first-tenant
+chart:
+  repository: https://chart.onechart.dev
+  name: onechart
+  version: 0.41.0
+values:
+  gitRepository: gimlet-io/test-app
+  gitSha: '{{ .SHA }}'
+strategicMergePatches: ""
+json6902Patches: []
+manifests: ""
